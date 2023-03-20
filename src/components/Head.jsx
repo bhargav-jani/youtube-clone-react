@@ -94,6 +94,12 @@ const Head = () => {
 				{searchSuggestions.length > 0 && (
 					<div className={"absolute bg-white w-9/12 rounded-lg border border-gray-100 overflow-hidden z-10"}>
 						<ul >
+							<li className="cursor-pointer py-1 px-4 shadow-sm hover:bg-gray-200">
+								This search is not functional due to api limitations
+							</li>
+							<li className="cursor-pointer py-1 px-4 shadow-sm hover:bg-gray-200">
+							 	Only search suggestions are.
+							</li>
 							{searchSuggestions.map((searchSuggestion) => (
 								<li
 									key={searchSuggestion}
